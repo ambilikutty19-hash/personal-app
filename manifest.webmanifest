@@ -1,7 +1,7 @@
 {
   "name": "MDX Dubai (Personal)",
   "short_name": "MDX Dubai",
-  "start_url": "./index.html",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#2b2050",
   "theme_color": "#2b2050",
@@ -10,3 +10,5 @@
     { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
   ]
 }
+
+
