@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>MDX Dubai (Personal)</title>
+
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#2b2050" />
+
+  <link rel="apple-touch-icon" href="icons/icon-180.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Splash overlay -->
+  <section id="screen-splash" class="screen splash splash-overlay">
+    <img src="assets/mdx-splash.png" alt="Middlesex University Dubai" class="splash-img" />
+  </section>
+
+  <!-- HOME -->
+  <section id="screen-home" class="screen active">
+    <header class="mdx-header-image">
+      <img src="assets/mdx-header.png" alt="Middlesex University Dubai" />
+    </header>
+
+    <main class="home-main">
+      <div class="grid">
+        <button class="tile" data-go="profile">
+          <span class="tile-ico"><img src="assets/icons/profile.png" alt="Profile" class="tile-img"></span>
+          <span class="tile-label">Profile</span>
+        </button>
+
+        <button class="tile" data-go="faqs">
+          <span class="tile-ico"><img src="assets/icons/faqs.png" alt="FAQs" class="tile-img"></span>
+          <span class="tile-label">FAQs</span>
+        </button>
+
+        <button class="tile" data-go="ask">
+          <span class="tile-ico"><img src="assets/icons/ask.png" alt="AskMDX" class="tile-img"></span>
+          <span class="tile-label">AskMDX</span>
+        </button>
+
+        <button class="tile" data-go="social">
+          <span class="tile-ico"><img src="assets/icons/social.png" alt="Social" class="tile-img"></span>
+          <span class="tile-label">Social</span>
+        </button>
+
+        <button class="tile" data-go="docs">
+          <span class="tile-ico"><img src="assets/icons/docs.png" alt="My Documents" class="tile-img"></span>
+          <span class="tile-label">My Documents</span>
+        </button>
+
+        <button class="tile" data-go="mymdx">
+          <span class="tile-ico"><img src="assets/icons/mymdx.png" alt="MyMDX" class="tile-img"></span>
+          <span class="tile-label">MyMDX</span>
+        </button>
+
+        <button class="tile" data-go="timetable">
+          <span class="tile-ico"><img src="assets/icons/timetable.png" alt="Timetable" class="tile-img"></span>
+          <span class="tile-label">Timetable</span>
+        </button>
+
+        <button class="tile" data-go="attendance">
+          <span class="tile-ico"><img src="assets/icons/attendance.png" alt="Attendance Info" class="tile-img"></span>
+          <span class="tile-label">Attendance Info</span>
+        </button>
+
+        <button class="tile" data-go="campus">
+          <span class="tile-ico"><img src="assets/icons/campus.png" alt="Campus Central" class="tile-img"></span>
+          <span class="tile-label">Campus Central</span>
+        </button>
+
+        <button class="tile" data-go="transport">
+          <span class="tile-ico"><img src="assets/icons/transport.png" alt="Transport" class="tile-img"></span>
+          <span class="tile-label">Transport</span>
+        </button>
+
+        <button class="tile" data-go="appointments">
+          <span class="tile-ico"><img src="assets/icons/appointments.png" alt="Appointments" class="tile-img"></span>
+          <span class="tile-label">Appointments</span>
+        </button>
+
+        <button class="tile" data-go="cas">
+          <span class="tile-ico"><img src="assets/icons/cas.png" alt="CAS" class="tile-img"></span>
+          <span class="tile-label">CAS</span>
+        </button>
+
+        <button class="tile" data-go="careers">
+          <span class="tile-ico"><img src="assets/icons/careers.png" alt="Careers" class="tile-img"></span>
+          <span class="tile-label">Careers</span>
+        </button>
+
+        <button class="tile" data-go="library">
+          <span class="tile-ico"><img src="assets/icons/library.png" alt="Library" class="tile-img"></span>
+          <span class="tile-label">Library</span>
+        </button>
+      </div>
+    </main>
+
+    <!-- Bottom nav -->
+    <nav class="bottom-nav">
+      <button class="nav-item active" data-nav="home" aria-label="Home" title="Home">
+        <svg class="nav-svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M3 10.5L12 3l9 7.5V21a1 1 0 0 1-1 1h-5v-7a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v7H4a1 1 0 0 1-1-1V10.5Z"
+                stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <button class="nav-item" data-nav="notifications" aria-label="Notifications" title="Notifications">
+        <svg class="nav-svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M18 8a6 6 0 1 0-12 0c0 7-3 7-3 7h18s-3 0-3-7Z"
+                stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          <path d="M9.5 19a2.5 2.5 0 0 0 5 0"
+                stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <button class="nav-item" data-nav="settings" aria-label="Settings" title="Settings">
+        <svg class="nav-svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"
+                stroke="currentColor" stroke-width="1.8"/>
+          <path d="M19.4 15a7.9 7.9 0 0 0 .1-1 7.9 7.9 0 0 0-.1-1l2-1.5-2-3.5-2.4 1a8.4 8.4 0 0 0-1.7-1l-.4-2.6H9.1L8.7 8a8.4 8.4 0 0 0-1.7 1l-2.4-1-2 3.5 2 1.5a7.9 7.9 0 0 0-.1 1 7.9 7.9 0 0 0 .1 1l-2 1.5 2 3.5 2.4-1a8.4 8.4 0 0 0 1.7 1l.4 2.6h5.8l.4-2.6a8.4 8.4 0 0 0 1.7-1l2.4 1 2-3.5-2-1.5Z"
+                stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </nav>
+  </section>
+
+  <!-- NOTIFICATIONS -->
+  <section id="screen-notifications" class="screen">
+    <header class="topbar">
+      <button class="back" data-back>←</button>
+      <div class="topbar-title">Notifications</div>
+      <div style="width:40px;"></div>
+    </header>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="new">New</button>
+      <button class="tab" data-tab="viewed">Viewed</button>
+    </div>
+
+    <div class="list-wrap">
+      <div id="notif-list"></div>
+    </div>
+  </section>
+
+  <!-- SETTINGS -->
+  <section id="screen-settings" class="screen">
+    <header class="topbar">
+      <button class="back" data-back>←</button>
+      <div class="topbar-title">Settings</div>
+      <div style="width:40px;"></div>
+    </header>
+
+    <div class="settings-wrap">
+      <div class="setting-card">
+        <div class="setting-row">
+          <div>
+            <div class="setting-title">Notification Preferences</div>
+            <div class="setting-sub">Enable/disable notifications in this app</div>
+          </div>
+
+          <label class="switch">
+            <input type="checkbox" id="pref-notifs">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="setting-card">
+        <button class="logout" id="btn-logout">Log out</button>
+        <div class="setting-sub" style="margin-top:8px;">
+          (This just clears your local data on this phone)
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMETABLE -->
+  <section id="screen-timetable" class="screen">
+    <header class="topbar">
+      <button class="back" data-back>←</button>
+      <div class="topbar-title">Timetable</div>
+
+      <!-- Outline calendar icon -->
+      <button class="icon icon-btn" aria-label="Calendar" title="Calendar">
+        <svg class="top-svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M7 3v3M17 3v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M4 7h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M6 5h12a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"
+                stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          <path d="M8 11h3M13 11h3M8 15h3M13 15h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </header>
+
+    <div class="month-bar">
+      <button class="month-btn" id="prev-month">←</button>
+      <div class="month-title" id="month-label"></div>
+      <button class="month-btn" id="next-month">→</button>
+    </div>
+
+    <div class="calendar-wrap">
+      <div class="dow">
+        <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+      </div>
+      <div id="calendar" class="calendar"></div>
+    </div>
+
+    <div class="hint">
+      Timetable(s) can change, please check regularly for updates
+    </div>
+
+    <div class="cards-area">
+      <div id="cards"></div>
+    </div>
+
+    <button class="fab" id="btn-add">＋</button>
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-card">
+        <div class="modal-title" id="modal-title">Add class</div>
+
+        <label>Module / Title
+          <input id="f-title" placeholder="Information in Organisations" />
+        </label>
+
+        <div class="row">
+          <label>Module Code
+            <input id="f-code" placeholder="CST1340" />
+          </label>
+          <label>Session Type
+            <input id="f-type" placeholder="Lect / Sem" />
+          </label>
+        </div>
+
+        <label>Tutor
+          <input id="f-tutor" placeholder="Tutor name" />
+        </label>
+
+        <label>Location
+          <input id="f-location" placeholder="Knowledge Park" />
+        </label>
+
+        <div class="row">
+          <label>Start
+            <input id="f-start" type="time" />
+          </label>
+          <label>End
+            <input id="f-end" type="time" />
+          </label>
+        </div>
+
+        <div class="modal-actions">
+          <button id="btn-cancel">Cancel</button>
+          <button id="btn-save" class="primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Placeholder screens -->
+  <section id="screen-profile" class="screen"><header class="topbar"><button class="back" data-back>←</button><div class="topbar-title">Profile</div></header><div class="placeholder">Coming soon</div></section>
+  <section id="screen-faqs" class="screen"><header class="topbar"><button class="back" data-back>←</button><div class="topbar-title">FAQs</div></header><div class="placeholder">Coming soon</div></section>
+  <section id="screen-ask" class="screen"><header class="topbar"><button class="back" data-back>←</button><div class="topbar-title">AskMDX</div></header><div class="placeholder">Coming soon</div></section>
+  <section id="screen-social" class="screen"><header class="topbar"><button class="back" data-back>←</button><div class="topbar-title">Social</div></header><div class="placeholder">Coming soon</div></section>
+  <section id="screen-docs" class="screen"><header class="topbar"><button class="back" data-back>←</button><div class="topbar-title">My Documents</div></header><div class="placeholder">Coming soon</div></section>
+  <section id="screen-mymdx" class="screen"><header class="topbar"><button class="back" data-back>←</button><div class="topbar-title">MyMDX</div></header><div class="placeholder">Coming soon</div></section>
+  <section id="screen-attendance" class="screen"><header class="topbar"><button class="back" data-back>←</button><div class="topbar-title">Attendance Info</div></header><div class="placeholder">Coming soon</div></section>
+  <section id="screen-campus" class="screen"><header class="topbar"><button class="back" data-back>←</button><div class="topbar-title">Campus Central</div></header><div class="placeholder">Coming soon</div></section>
+  <section id="screen-transport" class="screen"><header class="topbar"><button class="back" data-back>←</button><div class="topbar-title">Transport</div></header><div class="placeholder">Coming soon</div></section>
+  <section id="screen-appointments" class="screen"><header class="topbar"><button class="back" data-back>←</button><div class="topbar-title">Appointments</div></header><div class="placeholder">Coming soon</div></section>
+  <section id="screen-cas" class="screen"><header class="topbar"><button class="back" data-back>←</button><div class="topbar-title">CAS</div></header><div class="placeholder">Coming soon</div></section>
+  <section id="screen-careers" class="screen"><header class="topbar"><button class="back" data-back>←</button><div class="topbar-title">Careers</div></header><div class="placeholder">Coming soon</div></section>
+  <section id="screen-library" class="screen"><header class="topbar"><button class="back" data-back>←</button><div class="topbar-title">Library</div></header><div class="placeholder">Coming soon</div></section>
+
+  <script src="./app.js"></script>
+</body>
+</html>
