@@ -1,4 +1,4 @@
-const CACHE = "mdx-look-v60000";
+const CACHE = "mdx-look-v70000";
 
 const ASSETS = [
   "./",
@@ -37,3 +37,4 @@ self.addEventListener("install", (e) => {
 self.addEventListener("fetch", (e) => {
   e.respondWith(caches.match(e.request).then(r => r || fetch(e.request)));
 });
+
